@@ -58,7 +58,7 @@
         <!--Navigation Controller-->
         <scene sceneID="620-XO-UcK">
             <objects>
-                <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" id="8l8-X2-mf4" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavController" id="8l8-X2-mf4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Mz-1j-chh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -76,7 +76,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="wJO-Hc-cal">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4DQ-OA-WmL" sceneMemberID="viewController">
+                <tabBarController id="4DQ-OA-WmL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="uiw-mL-BSk"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="XgM-ec-umu">
