@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="wsC-Xq-xZe">
             <objects>
                 <tableViewController id="Zdp-f2-zHX" customClass="ViewController" customModule="WhitehousePetitions" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,7 +48,7 @@
                             <outlet property="delegate" destination="Zdp-f2-zHX" id="mbp-Vq-Vr1"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="xmI-nf-cf3"/>
+                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="xmI-nf-cf3"/>
                     <navigationItem key="navigationItem" id="2DO-qe-Mwj"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Se8-Pd-ajF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -58,7 +58,7 @@
         <!--Navigation Controller-->
         <scene sceneID="620-XO-UcK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8l8-X2-mf4" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" id="8l8-X2-mf4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Mz-1j-chh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -80,6 +80,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="uiw-mL-BSk"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="XgM-ec-umu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
