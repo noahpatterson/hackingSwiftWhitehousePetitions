@@ -28,9 +28,11 @@ class ViewController: UITableViewController {
                 let json = JSON(data: data)
                 if json["metadata"]["responseInfo"]["status"].intValue == 200 {
                     parse(json: json)
+                    return
                 }
             }
         }
+        showError()
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +69,12 @@ class ViewController: UITableViewController {
             petitions.append(obj)
         }
         tableView.reloadData()
+    }
+    
+    func showError() {
+        let ac = UIAlertController(title: "Loading Error", message: "There was a problem loading the feed, please check your connection and try again", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
     }
 }
 
